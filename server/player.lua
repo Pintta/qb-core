@@ -658,4 +658,11 @@ function QBCore.Player.CreateSerialNumber()
     return QBCore.Player.CreateSerialNumber()
 end
 
-PaycheckInterval() -- This starts the paycheck system
+function setTimeout(callback, delay)
+    local start = os.time()
+    while os.difftime(os.time(), start) < delay do
+    end
+    callback()
+end
+
+setTimeout(PaycheckInterval, 600)
