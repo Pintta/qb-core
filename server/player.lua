@@ -658,4 +658,6 @@ function QBCore.Player.CreateSerialNumber()
     return QBCore.Player.CreateSerialNumber()
 end
 
-PaycheckInterval() -- This starts the paycheck system
+setTimeout(function() {-- This calcuted paycheck system
+  PaycheckInterval();-- This starts the paycheck system
+}, 1000 * 60 * 10);-- Every 10 minutes
