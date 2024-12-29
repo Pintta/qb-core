@@ -424,7 +424,6 @@ function PaycheckInterval()
             end
         end
     end
-    SetTimeout(QBCore.Config.Money.PayCheckTimeOut * (60 * 1000), PaycheckInterval)
 end
 
 -- Callback Functions --
